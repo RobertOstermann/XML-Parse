@@ -27,7 +27,7 @@ namespace XML_Parse
             if (uxParseTerm.Text != null && uxParseTerm.Text.Length >= 3)
             {
                 XmlDocument doc = new XmlDocument();
-                doc.Load();
+                doc.Load(@"C:\Users\Robbert\Google Drive\Coding\Projects\Fantasy Football\Parse XML Version 1\Cars.xml");
                 foreach (XmlNode node in doc.DocumentElement)
                 {
                     string name = node.Attributes[0].InnerText;
